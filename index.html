@@ -1,46 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Secure</title>
-    <!-- Fonts and Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="CyberSecure - Professional Digital Defense and Cybersecurity Solutions">
+    <title>CyberSecure | Shielding Your Digital Future</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="script" href="scripts.js">
 </head>
+
 <body>
+    <!-- Abstract Background Overlay -->
+    <div id="particles-js" class="background-overlay"></div>
+
+    <!-- Global Alert Ticker -->
+    <div class="news-ticker">
+        <div class="ticker-content">
+            SECURE LINK ESTABLISHED... GLOBAL THREAT LEVEL: ELEVATED... RANSOMWARE ATTACK DETECTED IN SOUTH ASIA...
+            PHISHING CAMPAIGN TARGETING FINANCIAL SECTOR IN EUROPE... NEW DEFENSE PROTOCOLS INITIALIZED...
+        </div>
+    </div>
+
     <header class="header">
         <nav class="navbar">
             <div class="logo">Cyber-Secure</div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="scenarios.html">Simulations</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <!-- Hero Section -->
     <main class="hero-section">
         <div class="hero-content">
-            <h1>Welcome to CyberSecure</h1>
-            <p class="sub-heading">Your trusted partner in cybersecurity and digital defense.</p>
-            <a href="about.html" class="cta"> About </a>
+            <h1>Global Defense</h1>
+            <p class="sub-heading">Unifying international intelligence to combat cyber-crimes and shield the digital
+                frontier across all continents.</p>
+            <div class="cta-group">
+                <a href="about.html" class="cta">Intelligence Portal</a>
+            </div>
         </div>
     </main>
 
+    <!-- Global Threat Monitor Section -->
+    <section class="monitor-section">
+        <div class="hero-content" style="margin-bottom: 2rem;">
+            <h2 style="color: var(--primary); font-size: 2.5rem;">Live Threat Monitor</h2>
+            <p class="sub-heading">Real-time visualization of simulated global security incidents and network anomalies.
+            </p>
+        </div>
+        <div class="map-container">
+            <svg class="map-svg" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+                <!-- Simplified World Map Path (Abstract) -->
+                <path d="M150,150 Q250,50 400,100 T700,150 T850,250 Q750,400 600,350 T300,400 Q150,300 150,150"
+                    fill="rgba(0, 242, 255, 0.05)" stroke="var(--primary)" stroke-width="0.5" />
+                <!-- Pulse Dots (Simulated Threats) -->
+                <circle class="threat-dot" cx="200" cy="180" r="3" />
+                <circle class="threat-dot" cx="550" cy="120" r="3" style="animation-delay: 0.5s;" />
+                <circle class="threat-dot" cx="800" cy="300" r="3" style="animation-delay: 1.2s;" />
+                <circle class="threat-dot" cx="420" cy="380" r="3" style="animation-delay: 0.8s;" />
+            </svg>
+        </div>
+    </section>
+
     <footer class="footer">
-        <p>&copy; 2025 CyberSecure | All rights reserved. | Created by Pradumna H M </p>
-        <ul class="social-links">
-            <li><a href="https://x.com/HmPradumna"><img src="twitter.svg" alt="Twitter"></a></li>
-            <li><a href="https://in.linkedin.com/in/pradumna-hm-152a69247"><img src="linkedin.svg" alt="LinkedIn"></a></li>
-            <li><a href="https://github.com/Hmpradumna"><img src="github.svg" alt="GitHub"></a></li>
-        </ul>
+        <div class="footer-content">
+            <p>&copy; 2026 CyberSecure. All systems operational. | Created by Pradumna H M </p>
+            <ul class="social-links">
+                <li><a href="https://x.com/HmPradumna" title="Twitter"><img src="twitter.svg" alt="Twitter"></a></li>
+                <li><a href="https://in.linkedin.com/in/pradumna-hm-152a69247" title="LinkedIn"><img src="linkedin.svg"
+                            alt="LinkedIn"></a></li>
+                <li><a href="https://github.com/Hmpradumna" title="GitHub"><img src="github.svg" alt="GitHub"></a></li>
+            </ul>
+        </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="/src/js/scripts.js"></script>
+    <!-- Futuristic Effects Script -->
+    <script src="script.js"></script>
 </body>
+
 </html>
