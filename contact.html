@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - CyberSecure</title>
-    <!-- Fonts and Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contact | Secure Channel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="script" href="../src/js/scripts.js">
+</head>
+
 <body>
-    <!-- Header -->
     <header class="header">
         <nav class="navbar">
-            <div class="logo">CyberSecure</div>
+            <div class="logo">Cyber-Secure</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="scenarios.html">Simulations</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contact Section -->
     <section class="contact-section">
-        <div class="container">
-            <h1>Contact Us</h1>
-            <p>If you have any questions or need our services, feel free to reach out to us. We’re here to help!</p>
-            
-            <!-- Contact Form -->
-            <form action="/backend/contact" method="POST" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+        <div class="hero-content" style="margin-bottom: 3rem;">
+            <h1>Secure Communication</h1>
+            <p class="sub-heading">Initialize a secure uplink with our defense team. All communications are monitored
+                for integrity.</p>
+        </div>
 
-            <!-- Contact Information -->
-            <div class="contact-info">
-                <h2>Get in Touch</h2>
-                <p><strong>Email:</strong> contact@cybersecure.com</p>
-                <p><strong>Phone:</strong> +91 12345 67890</p>
-                <p><strong>Address:</strong> CyberSecure HQ, Tech Park, Bengaluru, India</p>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Uplink Identity</label>
+                <input type="text" id="name" name="name" placeholder="Enter your designation" required>
             </div>
+            <div class="form-group">
+                <label for="email">Return Channel (Email)</label>
+                <input type="email" id="email" name="email" placeholder="Enter secure email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Transmission Details</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter mission parameters"
+                    required></textarea>
+            </div>
+            <button type="submit" class="btn">Establish Uplink</button>
+        </form>
+
+        <div class="contact-info"
+            style="margin-top: 4rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 2rem;">
+            <h2 style="color: var(--primary); margin-bottom: 1.5rem;">Defense Coordinates</h2>
+            <p style="margin-bottom: 0.5rem;"><strong style="color: var(--primary);">Secure Node:</strong>
+                pradumnahm15@gmail.com</p>
+            <p><strong style="color: var(--primary);">Emergency Signal:</strong> +91 76767 73553</p>
+        </div>
+
+        <!-- Saved Data Log (Local Dataset) -->
+        <div class="hero-content" style="margin-top: 6rem; text-align: left;">
+            <h2 style="color: var(--primary);">Local Transmission Log</h2>
+            <p class="sub-heading">View data currently stored in your browser's secure local dataset. Note: No data is
+                saved to a remote server.</p>
+            <div id="logArea" class="log-container">
+                <div class="log-entry">
+                    <span>SYSTEM NOTIFICATION</span>
+                    Local database initialized. Synchronizing with browser storage...
+                </div>
+                <!-- Dynamic Logs will appear here -->
+            </div>
+            <button id="clearLog" class="btn"
+                style="margin-top: 2rem; background: var(--neon-alert); width: auto; padding: 0.5rem 1rem;">Purge Local
+                Data</button>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 CyberSecure | All rights reserved. | Created by Pradumna H M</p>
-        <ul class="social-links">
-            <li><a href="https://x.com/HmPradumna"><img src="twitter.svg" alt="Twitter"></a></li>
-            <li><a href="https://in.linkedin.com/in/pradumna-hm-152a69247"><img src="linkedin.svg" alt="LinkedIn"></a></li>
-            <li><a href="https://github.com/Hmpradumna"><img src="github.svg" alt="GitHub"></a></li>
-        </ul>
+        <div class="footer-content">
+            <p>&copy; 2026 CyberSecure. All systems operational. | Created by Pradumna H M </p>
+            <ul class="social-links">
+                <li><a href="https://x.com/HmPradumna" title="Twitter"><img src="twitter.svg" alt="Twitter"></a></li>
+                <li><a href="https://in.linkedin.com/in/pradumna-hm-152a69247" title="LinkedIn"><img src="linkedin.svg"
+                            alt="LinkedIn"></a></li>
+                <li><a href="https://github.com/Hmpradumna" title="GitHub"><img src="github.svg" alt="GitHub"></a></li>
+            </ul>
+        </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="/src/js/scripts.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
